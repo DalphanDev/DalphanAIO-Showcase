@@ -41,6 +41,7 @@ DalphanAIO is a bot software designed to streamline and optimize online purchase
 </p>
 
 <p>~ Thomas</p>
+<img src="https://i.imgur.com/ErQwhdX.png" width="200" height="200">
 
 <br>
 
