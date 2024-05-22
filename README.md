@@ -9,7 +9,7 @@ DalphanAIO is a bot software designed to streamline and optimize online purchase
 
 <ul>
   <li>DalphanAIO was able to reduce checkout times by up to 75%.</li>
-  <li>esigned and implemented intuitive user interfaces for the bot, utilizing Electron, React, Redux and Figma for frontend design.</li>
+  <li>Designed and implemented intuitive user interfaces for the bot, utilizing Electron, React, Redux and Figma for frontend design.</li>
   <li>Architected and developed the core functionalities of DalphanAIO, writing robust and efficient code primarily in Typescript and Golang.</li>
   <li>Developed and integrated various APIs to enable seamless interactions between DalphanAIO and online retail platforms, ensuring compatibility and functionality.</li>
 </ul>
