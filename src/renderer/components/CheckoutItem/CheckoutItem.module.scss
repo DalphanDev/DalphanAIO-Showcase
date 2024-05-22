@@ -1,0 +1,110 @@
+$border-radius: 7px;
+$gradient-1: #06c6dd;
+$gradient-2: #0368be;
+$gradient-3: #0146a6;
+
+#container {
+  display: flex;
+  position: relative;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 11px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(
+      90deg,
+      $gradient-1 0%,
+      $gradient-2 75%,
+      $gradient-3 100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    border-radius: $border-radius;
+    z-index: -1;
+  }
+
+  & > img {
+    width: 34px;
+    height: 34px;
+    border-radius: $border-radius;
+    margin-left: 10px;
+  }
+
+  & > button {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: $border-radius;
+    background: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      background: linear-gradient(
+        90deg,
+        $gradient-1 0%,
+        $gradient-2 75%,
+        $gradient-3 100%
+      );
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      border-radius: $border-radius;
+      z-index: -1;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+#product {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#size {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#site {
+  width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#proxy {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#orderNumber {
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

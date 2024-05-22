@@ -1,0 +1,179 @@
+$border-radius: 7px;
+$main-color: #48486e;
+$seconday-color: #7a7ab7;
+$gradient-1: rgba(72, 72, 110, 0.2);
+$gradient-2: rgba(6, 6, 22, 0);
+$common-width: 10%;
+
+#container {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  margin-bottom: $border-radius;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid $main-color;
+  outline: none;
+  background: linear-gradient(90deg, $gradient-1 0%, $gradient-2 100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: start;
+  cursor: default;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  z-index: 1;
+
+  #rectangle {
+    position: absolute;
+    width: $border-radius;
+    height: 100%;
+    background: $main-color;
+    flex-shrink: 0;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}
+
+#container:hover {
+  border: 2px solid $seconday-color;
+
+  #rectangle {
+    background: $seconday-color;
+  }
+}
+
+#site {
+  margin-left: 18px;
+  width: 10%;
+  max-width: 145px;
+}
+
+#mode {
+  width: 6%;
+  max-width: 85px;
+}
+
+#input {
+  width: 16%;
+  max-width: 225px;
+}
+
+#size {
+  width: 8%;
+  max-width: 115px;
+}
+
+#profile {
+  width: 6%;
+  max-width: 85px;
+}
+
+#proxy {
+  width: 6%;
+  max-width: 85px;
+}
+
+#status {
+  width: 14%;
+  max-width: 215px;
+}
+
+#site,
+#input,
+#size,
+#mode,
+#profile,
+#proxy,
+#status {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#actions {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: $common-width;
+  height: 100%;
+}
+
+#startButton,
+#stopButton,
+#editButton,
+#deleteButton {
+  margin-right: 7px;
+  width: 18px;
+  height: 18px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#deleteButton {
+  margin-right: 0; // Reset the margin-right for #deleteButton only
+}
+
+#container2 {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  margin-bottom: $border-radius;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid #0368be;
+  outline: none;
+  background: linear-gradient(90deg, $gradient-1 0%, $gradient-2 100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: start;
+  cursor: default;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  z-index: 1;
+
+  #rectangle {
+    position: absolute;
+    width: $border-radius;
+    height: 100%;
+    // background: var(
+    //   --linear,
+    //   linear-gradient(47deg, #0146a6 0%, #0368be 46.88%, #06c6dd 100%)
+    // );
+    background: #0368be;
+    flex-shrink: 0;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}
+
+.info {
+  color: #ffffff;
+}
+
+.success {
+  color: #01ffb2;
+}
+
+.failure {
+  color: #ff4d7e;
+}
+
+.warning {
+  color: #ffd898;
+}

@@ -1,0 +1,40 @@
+name: PublishWin
+
+on:
+  workflow_run:
+    workflows: ['Updater']
+    types:
+      - completed
+
+jobs:
+  publish:
+    runs-on: ${{ matrix.os }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    env: # Environment variables for all jobs
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      DO_KEY_ID: ${{ secrets.DO_KEY_ID }}
+      DO_SECRET_KEY: ${{ secrets.DO_SECRET_KEY }}
+    strategy:
+      matrix:
+        os: [windows-latest]
+
+    steps:
+      - name: Checkout git repo
+        uses: actions/checkout@v3
+
+      - name: Install Node and NPM
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install and build
+        run: |
+          npm install
+          npm run postinstall
+          npm run build
+
+      - name: Publish releases
+        # your environment variables here...
+        run: |
+          npm exec electron-builder -- --publish always --win

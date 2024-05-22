@@ -1,0 +1,139 @@
+$containerWidth: 238px;
+$containerHeight: 73px;
+$gap: 12px;
+
+#container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: $containerWidth;
+  height: $containerHeight;
+  margin-bottom: $gap;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #1d1d3e;
+  padding-left: 12px;
+  padding-top: 12px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  min-height: $containerHeight;
+  max-width: 300px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  will-change: transform;
+
+  &:focus {
+    outline: none;
+    background: rgba(72, 72, 110, 0.2);
+
+    &::before {
+      background: #7a7ab7;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95) translate3d(0, 0, 0) perspective(1px);
+  }
+
+  & > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-left: 11px;
+    margin-right: 7px;
+    margin-top: 17px;
+  }
+
+  &:hover {
+    background: rgba(72, 72, 110, 0.2);
+
+    &::before {
+      background: #7a7ab7;
+    }
+  }
+}
+
+#container2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: $containerWidth;
+  height: $containerHeight;
+  margin-bottom: $gap;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: center;
+  background: rgba(72, 72, 110, 0.3);
+  border-radius: 10px;
+  border: 2px solid #313169;
+  padding-left: 12px;
+  padding-top: 12px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:focus {
+    outline: none;
+  }
+
+  & > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-left: 11px;
+    margin-right: 7px;
+    margin-top: 17px;
+  }
+}
+
+#name {
+  width: 100%;
+  font-family: Biennale;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: start;
+  background: var(
+    --linear,
+    linear-gradient(47deg, #0146a6 0%, #0368be 46.88%, #06c6dd 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#number {
+  color: #fff;
+  font-family: Biennale;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 83.333% */
+  opacity: 0.75;
+}
+
+#editGroupButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+  margin-right: 7px;
+}
+
+#editGroupButtonImg {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}

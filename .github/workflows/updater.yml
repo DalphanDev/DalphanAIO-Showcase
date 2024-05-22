@@ -1,0 +1,22 @@
+name: Updater
+
+on: [push, pull_request]
+
+jobs:
+  release:
+    runs-on: windows-latest
+    if: "contains(github.event.head_commit.message, 'update:')"
+    env: # Environment variables for all jobs
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: npm install
+        run: npm install

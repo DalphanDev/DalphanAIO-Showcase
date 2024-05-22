@@ -1,0 +1,117 @@
+$h1-font-size: 16px;
+$h2-font-size: 13px;
+$toast-width: 148px;
+
+.info {
+  width: $toast-width;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  & > h1 {
+    font-size: $h1-font-size;
+    font-weight: 700;
+    background: linear-gradient(
+      47deg,
+      #0146a6 0%,
+      #0368be 46.88%,
+      #06c6dd 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  & > h2 {
+    font-size: $h2-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.success {
+  width: $toast-width;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  & > h1 {
+    font-size: $h1-font-size;
+    font-weight: 700;
+    background: linear-gradient(180deg, #01ffb2 0%, #5affcd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 148px;
+  }
+
+  & > h2 {
+    font-size: $h2-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.warning {
+  width: $toast-width;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  & > h1 {
+    font-size: $h1-font-size;
+    font-weight: 700;
+    background: linear-gradient(180deg, #e2a035 0%, #ffd898 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  & > h2 {
+    font-size: $h2-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.error {
+  width: $toast-width;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  & > h1 {
+    font-size: $h1-font-size;
+    font-weight: 700;
+    background: linear-gradient(180deg, #ff0047 0%, #ff4d7e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  & > h2 {
+    font-size: $h2-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

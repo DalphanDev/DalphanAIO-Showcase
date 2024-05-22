@@ -1,0 +1,25 @@
+{
+  "name": "dalphan-aio",
+  "version": "1.0.73",
+  "description": "Next Gen Automation",
+  "license": "MIT",
+  "author": {
+    "name": "Dalphan Computing",
+    "email": "dalphanaio@gmail.com"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "discord-rpc": "^4.0.1",
+    "puppeteer": "^21.5.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "sharp": "^0.32.6",
+    "ws": "^8.14.2"
+  }
+}
