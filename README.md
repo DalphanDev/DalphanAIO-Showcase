@@ -4,12 +4,21 @@
 
 # DalphanAIO
 <p>
-  Well here it is. After working on DalphanAIO for 2 years, and battling in my head about whether or not to publish the code, I've decided on doing it. I've removed any secrets or urls to the actual fully working version, but everything else is there. I still believe you can pull the modules from the last update I've pushed. I've modified other parts of the bot to allow anyone to just download the code and run it without needing a key anymore.
+DalphanAIO is a bot software designed to streamline and optimize online purchases by automating the buying process across multiple platforms. Leveraging multiple programming languages, DalphanAIO was created to meet modern industry standards.
 </p>
 
-<br>
+<ul>
+  <li>DalphanAIO was able to reduce checkout times by up to 1,000% on some sites.</li>
+  <li>esigned and implemented intuitive user interfaces for the bot, utilizing Electron, React, Redux and Figma for frontend design.</li>
+  <li>Architected and developed the core functionalities of DalphanAIO, writing robust and efficient code primarily in Typescript and Golang.</li>
+  <li>Developed and integrated various APIs to enable seamless interactions between DalphanAIO and online retail platforms, ensuring compatibility and functionality.</li>
+</ul>
 
 # Personal Story
+
+<p>
+  Well here it is. After working on DalphanAIO for 2 years, and battling in my head about whether or not to publish the code, I've decided on doing it. I've removed any secrets or urls to the actual fully working version, but everything else is there. I still believe you can pull the modules from the last update I've pushed. I've modified other parts of the bot to allow anyone to just download the code and run it without needing a key anymore.
+</p>
 
 ## IonAIO & TalonAIO
 <p>
