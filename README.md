@@ -1,4 +1,4 @@
-<img src="https://dalphan-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtaskPage.1b98ac68.png&w=2048&q=75" width="100%" />
+<img src="https://dalphan-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffigma.0901a6a4.png&w=1200&q=75" width="100%" />
 
 <br>
 
